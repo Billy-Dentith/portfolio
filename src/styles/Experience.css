@@ -1,0 +1,68 @@
+#experience-section {
+  max-width: 1000px;
+  margin: auto;
+  /* min-height: 50vh; */
+  height: 700px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.job-title {
+  color: var(--lightest-slate);
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.job-company {
+  color: var(--green-bright);
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.duration {
+  font-size: 18px;
+  color: var(--slate);
+  margin-top: 5px;
+}
+
+#vertical-tabpanel {
+    margin-top: -28px;
+    padding-left: 25px;
+}
+
+.MuiButtonBase-root {
+  color: var(--lightest-slate) !important;
+}
+.MuiButtonBase-root:focus {
+  color: var(--green-bright) !important;
+}
+
+#experience-section .MuiTab-root {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  margin-left: -35px;
+}
+
+.job-description li::before {
+  content: "//";
+  color: var(--green-bright);
+  position: absolute;
+  left: 0;
+}
+.job-description li {
+  position: relative;
+  padding-left: 30px;
+  padding-bottom: 16px;
+  font-size: 18px;
+  color: var(--slate);
+}
+
+.job-description {
+  padding-top: 20px;
+  max-width: 650px;
+  font-size: 20px;
+}
