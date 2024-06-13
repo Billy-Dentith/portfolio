@@ -1,50 +1,62 @@
 #experience-section {
   max-width: 1000px;
   margin: auto;
-  /* min-height: 50vh; */
-  height: 700px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  min-height: 50vh;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#experience-section ul {
+  list-style: none;
+  margin-left: -35px;
 }
 
 .job-title {
   color: var(--lightest-slate);
   font-weight: bold;
-  font-size: 28px;
+  font-size: 26px;
 }
 
 .job-company {
   color: var(--green-bright);
   font-weight: bold;
-  font-size: 28px;
+  font-size: 26px;
 }
 
 .duration {
-  font-size: 18px;
+  font-size: 16px;
   color: var(--slate);
   margin-top: 5px;
+  font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;;
 }
 
 #vertical-tabpanel {
-    margin-top: -28px;
-    padding-left: 25px;
+  margin-top: -28px;
 }
 
 .MuiButtonBase-root {
   color: var(--lightest-slate) !important;
+  border-right: 5px !important;
 }
 .MuiButtonBase-root:focus {
   color: var(--green-bright) !important;
 }
-
-#experience-section .MuiTab-root {
-  padding: 10px 20px;
-  font-weight: bold;
+.MuiTabs {
+  border-right: 2px !important;
+  border-color: var(--green-bright);
+}
+.MuiTabs-indicator {
+  background-color: var(--green-bright) !important;
 }
 
-ul {
-  list-style: none;
-  margin-left: -35px;
+#vertical-tab {
+  padding: 10px 10px;
+  font-size: 16px;
+  text-transform: capitalize;
+  text-align: left;
+  align-items: flex-start;
+  font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;;
 }
 
 .job-description li::before {
@@ -62,7 +74,35 @@ ul {
 }
 
 .job-description {
-  padding-top: 20px;
+  padding-top: 10px;
   max-width: 650px;
-  font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  #experience-section {
+    padding-bottom: 0px;
+  }
+
+  .MuiBox-root {
+    height: unset !important;
+    flex-direction: column !important;
+  }
+
+  .css-15zo09z-MuiTabs-root {
+    height: unset !important;
+    width: unset !important;
+    flex-direction: column !important;
+  }
+
+  #vertical-tabpanel {
+    margin-top: 0px;
+  }
+
+  .job-title {
+    font-size: 22px;
+  }
+
+  .job-company {
+    font-size: 22px;
+  }
 }

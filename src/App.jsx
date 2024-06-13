@@ -7,6 +7,7 @@ import Experience from './components/Experience'
 import AboutMe from './components/AboutMe'
 import Projects from './components/Projects'
 import Credits from './components/Credits';
+import Skills from './components/Skills';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <div id='content'>
         <Intro></Intro>
         <AboutMe></AboutMe>
+        <Skills></Skills>
         <Experience></Experience>
         <Projects></Projects>
         <Credits></Credits>

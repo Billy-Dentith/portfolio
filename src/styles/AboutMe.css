@@ -1,36 +1,24 @@
-.skills {
-  display: flex;
-}
-
-.skills-list {
-  margin: 10px 10px;
-  list-style: disc;
-}
-
-h4 {
-  text-decoration: none;
-  list-style: none;
-  margin-bottom: 10px;
-}
-
-p { 
-    font-size: 18px;
-}
-
 #about-me-section {
   max-width: 1000px;
   margin: auto;
   min-height: 50vh;
-  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#about-me-section p {
+  margin-top: 0px;
+  font-size: 18px;
+  max-width: 700px;
 }
 
 #about-content {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 #about-image {
-  padding-left: 40px;
+  /* padding-left: 40px;
+  padding-right: 40px; */
   padding-top: 20px;
 }
 
@@ -38,8 +26,22 @@ p {
   max-width: 300px;
   height: auto;
   border-radius: 10px;
-  margin-left: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
   box-shadow: 6px 13px 23px -5px rgba(0, 0, 0, 0.46);
   border: none;
 }
 
+@media (max-width: 900px) {
+  #about-content {
+    flex-direction: column;
+  }
+
+  #about-image {
+    padding-left: 0px;
+    padding-top: 50px;
+  }
+  #about-image img {
+    margin: auto;
+  }
+}

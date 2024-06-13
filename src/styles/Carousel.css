@@ -140,7 +140,7 @@ body {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e");
 }
 
-.sr-only {
+/* .sr-only {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -160,26 +160,26 @@ body {
   overflow: visible;
   clip: auto;
   white-space: normal;
-}
+} */
 
 .carousel-indicators {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 15;
-    opacity: 0.8;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 15;
+  opacity: 0.8;
 }
 .carousel-indicators button {
-    width: 30px;
-    height: 7.5px;
-    border-radius: 10px;
-    border-style: none;
-    margin: 5px 5px;
-    background-color: var(--lightest-slate);
+  width: 30px;
+  height: 7.5px;
+  border-radius: 10px;
+  border-style: none;
+  margin: 10px 5px;
+  background-color: var(--lightest-slate);
 }
 .carousel-indicators .active {
   background-color: var(--green-bright);
@@ -204,12 +204,9 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px;
   border-radius: 10px;
-}
-
-.carousel-caption {
   position: absolute;
-  bottom: 5rem;
-  padding-bottom: 1.5rem;
+  bottom: 25px;
+  padding-bottom: 20px;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -217,16 +214,17 @@ body {
   width: 100%;
 }
 .carousel-caption h3 {
-  font-size: 30px;
+  font-size: 26px;
   font-weight: bold;
   color: var(--lightest-slate);
-  margin: 10px;
+  margin: 5px;
 }
 .carousel-caption p {
   font-weight: bold;
   font-size: 16px;
   color: var(--lightest-slate);
   margin: 5px;
+  text-align: center;
 }
 .carousel-caption p.techStack {
   font-size: 14px;
@@ -235,7 +233,7 @@ body {
 }
 
 .visually-hidden {
-    display: none;
+  display: none;
 }
 
 .carousel-control-prev {
@@ -272,6 +270,27 @@ svg {
   vertical-align: middle;
 }
 
+#external-links {
+  padding: 5px;
+  padding-bottom: 15px;
+}
+.github-icon {
+  color: var(--lightest-slate);
+  margin: 20px;
+  height: 30px;
+  width: 50px;
+}
+.github-icon:hover {
+  color: var(--green-bright);
+}
+.browser-icon {
+  color: var(--lightest-slate);
+  margin: 20px
+}
+.browser-icon:hover {
+  color: var(--green-bright);
+}
+
 @keyframes left {
   from {
     left: 0;
@@ -287,5 +306,17 @@ svg {
   }
   to {
     left: 0;
+  }
+}
+
+/* @media (max-width: 675px) {
+  .carousel-caption {
+    bottom: 100px;
+  }
+} */
+
+@media (max-width: 450px) {
+  .carousel-caption {
+    bottom: 5.5rem;
   }
 }

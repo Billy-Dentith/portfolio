@@ -3,40 +3,58 @@ import { useState } from "react";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
+
+const isHorizontal = window.innerWidth < 650;
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
-  return (
-    <div
-      role="tabpanel"
-      hidden={value !== index}
-      id={`vertical-tabpanel`}
-      aria-labelledby={`vertical-tab`}
-      {...other}
-    >
-      {value === index && (
-        <Box 
-            sx={{ p: 3 }}
-        >
-          {children}
-        </Box>
-      )}
-    </div>
-  );
+  if (isHorizontal) {
+    return (
+      <div
+        role="tabpanel"
+        hidden={value !== index}
+        id={`full-width-tabpanel`}
+        aria-labelledby={`full-width-tab-${index}`}
+        {...other}
+      >
+        {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
+      </div>
+    );
+  } else {
+    return (
+      <div
+        role="tabpanel"
+        hidden={value !== index}
+        id={`vertical-tabpanel`}
+        aria-labelledby={`vertical-tab-${index}`}
+        {...other}
+      >
+        {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
+      </div>
+    );
+  }
 }
 
 TabPanel.propTypes = {
-    children: PropTypes.node,
-    index: PropTypes.number.isRequired,
-    value: PropTypes.number.isRequired,
-  };
+  children: PropTypes.node,
+  index: PropTypes.number.isRequired,
+  value: PropTypes.number.isRequired,
+};
 
 function a11yProps(index) {
-  return {
-    id: `vertical-tab-${index}`,
-  };
+  if (isHorizontal) {
+    return {
+      id: `full-width-tab`,
+      'aria-controls': `full-width-tabpanel-${index}`,
+    }
+  } else {
+    return {
+      id: `vertical-tab`,
+      'aria-controls': `vertical-tabpanel-${index}`,
+    };
+  }
 }
 
 export default function JobsTable() {
@@ -45,7 +63,7 @@ export default function JobsTable() {
   const experienceItems = {
     Northcoders: {
       jobTitle: "Junior Software Development Student",
-      duration: "MAR 2024 - JUN 2024",
+      duration: "Mar 2024 - Jun 2024",
       desc: [
         "Attended an intensive 13 week bootcamp, learning both front-end and back-end development.",
         "Mastered fundamental concepts of JavaScript programming, including best practices and test-driven development.",
@@ -56,7 +74,7 @@ export default function JobsTable() {
     },
     "Woodford Motorcycles": {
       jobTitle: "Parts and Servicing Manager",
-      duration: "SEP 2015 - PRESENT",
+      duration: "Sep 2015 - Present",
       desc: [
         "Proficiently managed a high volume of customer interactions on a daily basis, ensuring exemplary satisfaction across all areas.",
         "Maintained and updated a comprehensive customers database and parts database, implementing necessary amendments as per requirements.",
@@ -71,22 +89,20 @@ export default function JobsTable() {
   };
 
   return (
-    <Box
-      sx={{ display: 'flex', height: 300 }}
-    >
+    <Box sx={{ display: "flex", height: 500, flexGrow: 1 }}>
       <Tabs
-        orientation={"vertical"}
-        variant={"scrollable"}
+        orientation={!isHorizontal ? "vertical" : null}
+        variant={isHorizontal ? "fullWidth" : "scrollable"}
         value={value}
         onChange={handleChange}
-        sx={{ borderRight: 1, borderColor: '--green-bright' }}
+        sx={{ borderRight: 1, borderColor: "#233554" }}
       >
         {Object.keys(experienceItems).map((key, index) => (
-          <Tab label={key} {...a11yProps(index)} />
+          <Tab key={index} label={key} {...a11yProps(index)} />
         ))}
       </Tabs>
       {Object.keys(experienceItems).map((key, index) => (
-        <TabPanel value={value} index={index}>
+        <TabPanel key={index} value={value} index={index}>
           <div className="job-title">
             {experienceItems[key]["jobTitle"] + " "}
           </div>

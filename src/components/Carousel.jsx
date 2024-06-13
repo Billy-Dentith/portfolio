@@ -1,13 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import "../styles/Projects.css";
 // import "bootstrap/dist/css/bootstrap.min.css";
-import '../styles/Carousel.css'
+import "../styles/Carousel.css";
 import Carousel from "react-bootstrap/Carousel";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import OpenInBrowserIcon from "@mui/icons-material/OpenInBrowser";
 
 export default function CarouselComponent() {
-  const [index, setIndex] = useState(0);
 
   const projects = {
     "NC News Back-end": {
@@ -57,24 +56,18 @@ export default function CarouselComponent() {
             <h3>{projects[project]["title"]}</h3>
             <p>{projects[project]["desc"]}</p>
             <p>{projects[project]["techStack"]}</p>
-            <span>
-              <a className="github-icon" href={projects[project]["link"]}>
+            <span id="external-links">
+              <a className="github-icon" aria-label="GitHub" href={projects[project]["link"]}>
                 <GitHubIcon
                   style={{
-                    fontSize: 25,
-                    color: "var(--lightest-slate)",
-                    margin: 10,
-                    marginRight: 20,
+                    fontSize: 30,
                   }}
                 />
               </a>
-              <a className="browser-icon" href={projects[project]["open"]}>
+              <a className="browser-icon" aria-label="External Link" href={projects[project]["open"]}>
                 <OpenInBrowserIcon
                   style={{
-                    fontSize: 25,
-                    color: "var(--lightest-slate)",
-                    margin: 10,
-                    marginLeft: 20
+                    fontSize: 35,
                   }}
                 />
               </a>
