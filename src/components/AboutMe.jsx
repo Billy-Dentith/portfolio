@@ -9,16 +9,13 @@ export default function AboutMe() {
       <div id="about-content">
         <div id="about-description">
           <p>
-            My interest in Software Development started about a year ago when I
-            decided to take part in a couple of online courses to try and up-skill. I have always had an interest in
-            technology throughout my life and this was the next logical step.
+            My interest in Software Development started about a year ago when I decided to take part in a series of online courses to enhance my skills. Technology has always fascinated me, and diving into software development felt like the natural next step.
           </p>
           <p>
-            I then was accepted onto an intensive bootcamp hosted by Northcoders UK. During this bootcamp I learnt
-            both front-end and back-end development and carried out multiple projects building web apps.
+            I was thrilled to be accepted into an intensive bootcamp hosted by Northcoders UK. Throughout this bootcamp, I gained hands on experience in both front-end and back-end development, completing multiple projects and building dynamic web applications. 
           </p>
           <p>
-            I have now finished the course and I am advancing my knowledge by carrying out my own solo projects, while also applying for jobs in the field.
+            Having successfully completed the course, I am now focused on expanding my knowledge through solo projects, while actively seeking opportunities in the field. I'm passionate about creating efficient, user-friendly applications and continuously learning to stay at the forefront of technology. 
           </p>
         </div>
         <div id="about-image">
