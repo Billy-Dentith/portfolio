@@ -34,7 +34,7 @@ export default function Skills() {
   ];
 
   return (
-    <section id="skills-section">
+    <section id="skills">
       <h2 className="section-heading">Skills</h2>
       <p>Here are some technologies I've worked with:</p>
       <ul className="skills-list">

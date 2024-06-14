@@ -3,7 +3,7 @@ import "../styles/Intro.css";
 
 export default function Intro() {
   return (
-    <section id="intro-section">
+    <section id="intro">
       <h1>Hi, my name is</h1>
       <h2 className="big-heading">Billy Dentith.</h2>
       <h3 className="big-heading">Junior Software Developer.</h3>
@@ -12,7 +12,7 @@ export default function Intro() {
       </p>
       <a
         className="cv-link"
-        href="../.././public/Billy-Dentith-CV.pdf"
+        href="/Billy-Dentith-CV.pdf"
         download
       >
         Check out my CV!

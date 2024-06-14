@@ -1,4 +1,4 @@
-#skills-section {
+#skills {
   max-width: 1000px;
   margin: auto;
   min-height: 50vh;
@@ -7,7 +7,7 @@
   /* flex-direction: column; */
 }
 
-#skills-section ul {
+#skills ul {
     list-style: none;
     padding: 0px;
 }
@@ -39,7 +39,7 @@
     color: var(--light-slate);
 }
 
-#skills-section svg {
+#skills svg {
     height: 42px;
     width: auto;
 }

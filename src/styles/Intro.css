@@ -1,4 +1,4 @@
-#intro-section {
+#intro {
     max-width: 1000px;
     margin: 0px auto;
     display: flex;
@@ -10,15 +10,15 @@
     padding: 0px;
 }
 
-#intro-section h1 {
+#intro h1 {
     margin: 0 0 25px 3px;
     color: var(--green-bright);
-    font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;;
+    font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
     font-weight: 400;
     font-size: clamp(10px ,5vw, 20px);
 }
 
-#intro-section p {
+#intro p {
     margin: 20px 0;
     max-width: 540px;
     font-size: 18px;
@@ -32,15 +32,16 @@
 
 .cv-link {
     margin-top: 50px;
+    font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
     font-size: 20px;
     text-decoration: none;
     color: var(--green-bright);
-    border: solid;
-    border-radius: 5px;
+    border: 1px solid var(--green-bright);
+    border-radius: 10px;
     padding: 20px;
     transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
 }
-
 .cv-link:hover {
-    opacity: 0.5;
+    box-shadow: 5px 5px 0 0 var(--green-bright);
+    transform: translate(-5px, -5px);
 }

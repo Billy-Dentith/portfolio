@@ -4,7 +4,7 @@ import JobsTable from "./JobsTable";
 
 export default function Experience() {
   return (
-    <section id="experience-section">
+    <section id="experience">
       <h2 className="section-heading">Experience</h2>
       <JobsTable></JobsTable>
     </section>

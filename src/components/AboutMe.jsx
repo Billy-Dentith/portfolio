@@ -2,11 +2,9 @@ import React from "react";
 import "../styles/AboutMe.css";
 
 export default function AboutMe() {
-  // const frontendSkills = ["JavaScript", "Node.js", "React", "React Native"];
-  // const backendSkills = ["PostgreSQL", "Express", "MongoDB", "Mongoose"];
-
+ 
   return (
-    <section id="about-me-section">
+    <section id="about">
       <h2 className="section-heading">About Me</h2>
       <div id="about-content">
         <div id="about-description">
@@ -22,23 +20,6 @@ export default function AboutMe() {
           <p>
             I have now finished the course and I am advancing my knowledge by carrying out my own solo projects, while also applying for jobs in the field.
           </p>
-          {/* <p>Here are a few technologies I've been working with recently:</p> */}
-          {/* <div className="skills">
-            <ul className="skills-list">
-              <h4>Front-end</h4>
-              {frontendSkills &&
-                frontendSkills.map((skill, index) => (
-                  <li key={index}>{skill}</li>
-                ))}
-            </ul>
-            <ul className="skills-list">
-              <h4>Back-end</h4>
-              {backendSkills &&
-                backendSkills.map((skill, index) => (
-                  <li key={index}>{skill}</li>
-                ))}
-            </ul>
-          </div> */}
         </div>
         <div id="about-image">
           <img alt="Billy Dentith" src={"/assets/Me.png"} />
