@@ -11,7 +11,7 @@ export default function CarouselComponent() {
   const projects = {
     "NC News Back-end": {
       title: "NC News Back-end",
-      desc: "A backend API for a news article website",
+      desc: "A backend API for a news article website.",
       techStack: "JavaScript, Express, PostgreSQL",
       link: "https://github.com/Billy-Dentith/nc-news-backend",
       open: "",
@@ -19,7 +19,7 @@ export default function CarouselComponent() {
     },
     "NC News Front-end": {
       title: "NC News Front-end",
-      desc: "A news article website using the backend I previously built",
+      desc: "A news article website using the backend I previously built.",
       techStack: "JavaScript, React.js, CSS",
       link: "https://github.com/Billy-Dentith/nc-news-frontend",
       open: "",
@@ -27,7 +27,7 @@ export default function CarouselComponent() {
     },
     "Plan Ahead Back-end": {
       title: "Plan Ahead Back-end",
-      desc: "The back-end for a travel planning application where users can plan their day around their chosen interests and location",
+      desc: "The back-end for a travel planning application where users can plan their day around their chosen interests and location.",
       techStack: "MongoDB, Mongoose, OpenStreetMaps API",
       link: "https://github.com/OniUnderscore/DayPlanner",
       open: "",
@@ -35,7 +35,7 @@ export default function CarouselComponent() {
     },
     "Plan Ahead Front-end": {
       title: "Plan Ahead Front-end",
-      desc: "The front-end for a travel planning application where users can plan their day around their chosen interests and location",
+      desc: "The front-end for a travel planning application where users can plan their day around their chosen interests and location.",
       techStack: "React Native, EXPO, Google Maps API",
       link: "https://github.com/Billy-Dentith/DayPlanner-FE",
       open: "",
@@ -50,12 +50,12 @@ export default function CarouselComponent() {
           <img
             src={projects[project]["image"]}
             alt={project}
-            className="d-block w-100"
+            className="carousel-img"
           />
           <Carousel.Caption>
             <h3>{projects[project]["title"]}</h3>
             <p>{projects[project]["desc"]}</p>
-            <p>{projects[project]["techStack"]}</p>
+            <p className="tech-stack">{projects[project]["techStack"]}</p>
             <span id="external-links">
               <a className="github-icon" aria-label="GitHub" href={projects[project]["link"]}>
                 <GitHubIcon

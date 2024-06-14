@@ -22,7 +22,7 @@ body {
   width: 100%;
   overflow: hidden;
   height: 500px;
-  border-radius: 24px;
+  border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 .carousel-inner:hover {
@@ -33,13 +33,14 @@ body {
   position: relative;
   display: none;
   animation: 0.6s ease-in-out;
-  height: 70vh;
+  height: 100%;
 }
 
 .carousel-item > .carousel-img {
+  /* display: block !important; */
+  position: absolute;
   width: 100%;
-  min-height: 70vh;
-  height: auto;
+  height: 100%;
 }
 
 .carousel-inner > .active,
@@ -140,7 +141,7 @@ body {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e");
 }
 
-/* .sr-only {
+.sr-only {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -160,7 +161,7 @@ body {
   overflow: visible;
   clip: auto;
   white-space: normal;
-} */
+}
 
 .carousel-indicators {
   position: absolute;
@@ -185,10 +186,10 @@ body {
   background-color: var(--green-bright);
 }
 
-.section-heading {
+/* .section-heading {
   text-align: center;
   margin-bottom: 20px;
-}
+} */
 
 .carousel img {
   object-fit: contain;
@@ -201,12 +202,11 @@ body {
 }
 
 .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 10px;
   border-radius: 10px;
-  position: absolute;
-  bottom: 25px;
-  padding-bottom: 20px;
+  position: relative;
+  padding-bottom: 0px;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -223,12 +223,10 @@ body {
   font-weight: bold;
   font-size: 16px;
   color: var(--lightest-slate);
-  margin: 5px;
+  margin: 2px;
   text-align: center;
 }
-.carousel-caption p.techStack {
-  font-size: 14px;
-  font-weight: bold;
+.carousel-caption p.tech-stack {
   color: var(--green-bright);
 }
 
@@ -259,20 +257,12 @@ body {
   transition: opacity 0.15s ease;
 }
 
-.w-100 {
-  width: 100% !important;
-}
-.d-block {
-  display: block !important;
-}
-img,
-svg {
-  vertical-align: middle;
-}
-
 #external-links {
   padding: 5px;
   padding-bottom: 15px;
+}
+svg {
+  vertical-align: middle;
 }
 .github-icon {
   color: var(--lightest-slate);
@@ -309,14 +299,8 @@ svg {
   }
 }
 
-/* @media (max-width: 675px) {
-  .carousel-caption {
-    bottom: 100px;
-  }
-} */
-
 @media (max-width: 450px) {
-  .carousel-caption {
-    bottom: 5.5rem;
+  .carousel-inner {
+    height: 400px;
   }
 }
