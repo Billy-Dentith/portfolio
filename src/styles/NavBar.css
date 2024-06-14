@@ -46,6 +46,9 @@
     padding: 8px;
     text-decoration: none;
 }
+.ml-auto .nav-link:hover {
+  transform: scale(1.15);
+}
 
 #basic-navbar-nav {
     display: flex;

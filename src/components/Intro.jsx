@@ -8,7 +8,7 @@ export default function Intro() {
       <h2 className="big-heading">Billy Dentith.</h2>
       <h3 className="big-heading">Junior Software Developer.</h3>
       <p>
-        I'm a junior software developer from London, England. Currently, I'm focused on building up my projects portfolio. My goal is to create engaging experiences for users, with a fine balance of technology and design.
+        I'm a junior software developer from London, England, dedicated to creating engaging user experiences by blending technology and design. Currently, I'm building my portfolio with projects that showcase this balance. 
       </p>
       <a
         className="cv-link"

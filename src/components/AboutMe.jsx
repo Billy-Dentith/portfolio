@@ -19,7 +19,7 @@ export default function AboutMe() {
           </p>
         </div>
         <div id="about-image">
-          <img alt="Billy Dentith" src={"/assets/Me.png"} />
+          <img alt="Billy Dentith" src={"/assets/Me.JPG"} />
         </div>
       </div>
     </section>

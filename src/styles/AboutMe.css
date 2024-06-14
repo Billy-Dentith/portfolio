@@ -1,7 +1,7 @@
 #about {
   max-width: 1000px;
   margin: auto;
-  min-height: 50vh;
+  /* min-height: 50vh; */
   padding: 50px 0;
 }
 
@@ -17,16 +17,18 @@
 }
 
 #about-image {
-  padding-top: 20px;
+  margin-right: 100px;
 }
 
 #about-image img {
   max-width: 300px;
+  width: 100%;
   height: auto;
   border-radius: 10px;
+  margin-top: 20px;
   margin-left: 50px;
   margin-right: 50px;
-  box-shadow: 6px 13px 23px -5px rgba(0, 0, 0, 0.46);
+  box-shadow: 6px 13px 23px -5px var(--navy-shadow);
   border: none;
 }
 
@@ -40,6 +42,7 @@
     padding-top: 50px;
   }
   #about-image img {
-    margin: auto;
+    /* margin: auto; */
+    margin-right: 0px;
   }
 }
