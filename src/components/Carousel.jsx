@@ -15,7 +15,7 @@ export default function CarouselComponent() {
       techStack: "JavaScript, Express, PostgreSQL",
       link: "https://github.com/Billy-Dentith/nc-news-backend",
       open: "",
-      image: "/assets/Computer.jpg",
+      image: "/assets/NC-News-Back-End.jpg",
     },
     "NC News Front-end": {
       title: "NC News Front-end",
@@ -23,7 +23,7 @@ export default function CarouselComponent() {
       techStack: "JavaScript, React.js, CSS",
       link: "https://github.com/Billy-Dentith/nc-news-frontend",
       open: "",
-      image: "/assets/Computer.jpg",
+      image: "/assets/NC-News.jpg",
     },
     "Plan Ahead Back-end": {
       title: "Plan Ahead Back-end",
@@ -31,7 +31,7 @@ export default function CarouselComponent() {
       techStack: "MongoDB, Mongoose, OpenStreetMaps API",
       link: "https://github.com/OniUnderscore/DayPlanner",
       open: "",
-      image: "/assets/Computer2.jpg",
+      image: "/assets/Code.jpg",
     },
     "Plan Ahead Front-end": {
       title: "Plan Ahead Front-end",
@@ -39,7 +39,7 @@ export default function CarouselComponent() {
       techStack: "React Native, EXPO, Google Maps API",
       link: "https://github.com/Billy-Dentith/DayPlanner-FE",
       open: "",
-      image: "/assets/Code.jpg",
+      image: "/assets/Plan-Ahead.jpg",
     },
   };
 
