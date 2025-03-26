@@ -11,18 +11,18 @@ export default function CarouselComponent() {
   const projects = {
     "NC News Back-end": {
       title: "NC News Back-end",
-      desc: "A backend API for a news article website.",
-      techStack: "JavaScript, Express, PostgreSQL",
+      desc: "The backend API for a news article website.",
+      techStack: "JavaScript, Node.js, Express, PostgreSQL",
       link: "https://github.com/Billy-Dentith/nc-news-backend",
-      open: "",
+      open: "https://news-app-8vge.onrender.com/api",
       image: "/assets/NC-News-Back-End.jpg",
     },
     "NC News Front-end": {
       title: "NC News Front-end",
       desc: "A news article website using the backend I previously built.",
-      techStack: "JavaScript, React.js, CSS",
+      techStack: "JavaScript, React, CSS",
       link: "https://github.com/Billy-Dentith/nc-news-frontend",
-      open: "",
+      open: "https://bd-nc-news.netlify.app/",
       image: "/assets/NC-News.jpg",
     },
     "Plan Ahead Back-end": {
@@ -30,7 +30,7 @@ export default function CarouselComponent() {
       desc: "The back-end for a travel planning application where users can plan their day around their chosen interests and location.",
       techStack: "MongoDB, Mongoose, OpenStreetMaps API",
       link: "https://github.com/OniUnderscore/DayPlanner",
-      open: "",
+      open: "https://github.com/OniUnderscore/DayPlanner",
       image: "/assets/Code.jpg",
     },
     "Plan Ahead Front-end": {
@@ -38,8 +38,24 @@ export default function CarouselComponent() {
       desc: "The front-end for a travel planning application where users can plan their day around their chosen interests and location.",
       techStack: "React Native, EXPO, Google Maps API",
       link: "https://github.com/Billy-Dentith/DayPlanner-FE",
-      open: "",
+      open: "https://github.com/Billy-Dentith/DayPlanner-FE",
       image: "/assets/Plan-Ahead.jpg",
+    },
+    "Buon Appetito Full-Stack": {
+      title: "Buon Appetito Full-Stack",
+      desc: "A full-stack application for a restaurant that allows users to view menus, add items to their cart and place an order. Also allows staff to add, edit and delete items from the menu, as well as view orders and update their statuses.",
+      techStack: "Next.js, NextAuth.js, Node.js, Express, PostgreSQL, Tailwind CSS",
+      link: "https://github.com/Billy-Dentith/restaurant-app-be",
+      open: "https://github.com/Billy-Dentith/restaurant-app",
+      image: "/assets/Buon-Appetito.png",
+    },
+    "Event Nest Full-Stack": {
+      title: "Event Nest Full-Stack",
+      desc: "A full-stack application for creating and managing events, where users can join events and add them to their Google calendar, and staff can add and edit events.",
+      techStack: "React, Node.js, Express, MongoDB, Mongoose, Firebase, CSS, Google Calendar API, Stripe API",
+      link: "https://github.com/Billy-Dentith/events-platform",
+      open: "https://event-nest-bd.netlify.app/",
+      image: "/assets/Event-Nest.png",
     },
   };
 

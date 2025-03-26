@@ -61,7 +61,17 @@ export default function JobsTable() {
   const [value, setValue] = useState(0);
 
   const experienceItems = {
-    Northcoders: {
+    "Launchpad": {
+      jobTitle: "Freelance Project Consultant",
+      duration: "November 2024 - December 2024",
+      desc: [
+        "Designed and developed a bespoke event management platform for internal use, aimed at streamlining event creation, management and user interaction.",
+        "Built a full-stack web application with seamless Google calendar integration, enabling users to easily view and join events.",
+        "Delivered a high quality, end-to-end solution that met all project requirements and exceeded client expectations, focusing on scalability, performance optimisation and clean code.",
+        "Utilised React, Node.js, Express, MongoDB, Mongoose, Firebase, CSS and Google Calendar API to create a robust and efficient platform.",
+      ],
+    },
+    "Northcoders": {
       jobTitle: "Junior Software Development Student",
       duration: "Mar 2024 - Jun 2024",
       desc: [
